@@ -1,0 +1,8 @@
+pandas
+numpy
+mplsoccer
+understatapi
+bs4
+rapidfuzz
+flask
+requests
