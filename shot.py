@@ -9,6 +9,7 @@ import pandas as pd
 import understatapi
 import numpy as np
 from rapidfuzz import fuzz, process
+import os
 
 # %%
 with open("players/players_data.json", encoding="utf-8") as p:
@@ -25,8 +26,8 @@ df4 = [name.lower() for name in df4]
 
 
 def matching(input1, df4):
-    threshold = 20
-    match, score, _ = process.extractOne(input1, df4, scorer=fuzz.ratio)
+    threshold = 95
+    match, score, _ = process.extractOne(input1, df4, scorer=fuzz.partial_ratio)
 
     if score >= threshold:
         return match
@@ -533,6 +534,14 @@ ax3.text(
     color="white",
     alpha=0.7,
 )
+
+# %%
+folder_path = "results"
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
+
+fig.savefig(f"{folder_path}/{player_name}_{season}.png", bbox_inches="tight", dpi=300)
+plt.close(fig)
 
 # %%
 fig
