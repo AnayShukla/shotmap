@@ -7,3 +7,4 @@ requests
 selenium
 sentence_transformers
 jellyfish
+chromedriver-autoinstaller
