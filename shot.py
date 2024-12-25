@@ -46,8 +46,7 @@ def matching(input1, df4):
             input_parts = input1.split()
             name_parts = name.split()
 
-            # Compare the phonetic representation of the first part of the names
-            if input_parts and name_parts:  # Ensure both names have at least one part
+            if input_parts and name_parts:  
                 input_first_part = input_parts[0]
                 name_first_part = name_parts[0]
 
