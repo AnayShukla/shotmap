@@ -7,7 +7,6 @@ Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga
 3. Run `pip install -r requirements.txt` to install all the required packages.
 4. Run `python shot.py`.
 
-
 ## Generating Output
 1. Enter the name of the player whose shot map you wish to see. You can also enter discrete names such as **salah** to get it for **Mohammed Salah**, but avoid doing so for players with common names or vague spellings (basically specificity is preferred :) )
 2. Enter the initial year of the season of your choice. For e.g. if you wish to see it for the 2024/25 season, enter 2024.
