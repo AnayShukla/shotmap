@@ -1,0 +1,9 @@
+pandas
+numpy
+mplsoccer
+understatapi
+flask
+requests
+selenium
+sentence_transformers
+jellyfish
