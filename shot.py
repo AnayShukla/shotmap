@@ -15,6 +15,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 from sentence_transformers import SentenceTransformer, util
 import jellyfish
+from webdriver_manager.chrome import ChromeDriverManager
 
 # %%
 with open("players/players_data.json", encoding="utf-8") as p:
@@ -99,7 +100,7 @@ if league == "EPL" and season == "2024":
         chrome_options.add_argument("--disable-logging")
         chrome_options.add_argument("--silent")
 
-        driver = webdriver.Chrome(options=chrome_options)
+        driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
         url1 = "https://www.fplreview.com/free-planner/"
         driver.get(url1)
