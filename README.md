@@ -1,5 +1,5 @@
 ## Shotmap
-Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. 
+Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. EV projections also avaiable, sourced from https://fplreview.com.
 
 ## Tutorial
 1. Download the zip file and extract its contents or run `git clone https://github.com/AnayShukla/shotmap.git` in your Terminal.
@@ -9,9 +9,9 @@ Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga
 
 
 ## Generating Output
-1. Enter the name of the player whose shot map you wish to see. You can also enter discrete names such as **salah** to get it for **Mohammed Salah**, but avoid doing so for players with common names or vague spellings.
+1. Enter the name of the player whose shot map you wish to see. You can also enter discrete names such as **salah** to get it for **Mohammed Salah**, but avoid doing so for players with common names or vague spellings (basically specificity is preferred :) )
 2. Enter the initial year of the season of your choice. For e.g. if you wish to see it for the 2024/25 season, enter 2024.
-3. Type yes or no if you wish to see FPL Review EV (**free model**) for the upcoming 3 GWs (not available currently, in the works).
+3. Type yes or no if you wish to see FPL Review EV for the upcoming GW.
 4. Check `shotmap/results` to find the exported image.
 
 ## Example
