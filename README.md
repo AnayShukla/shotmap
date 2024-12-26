@@ -1,5 +1,5 @@
 ## Shotmap
-Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. EV projections also avaiable, sourced from https://fplreview.com.
+Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. EV projections also available, sourced from https://fplreview.com.
 
 ## Tutorial
 1. Download the zip file and extract its contents or run `git clone https://github.com/AnayShukla/shotmap.git` in your Terminal.
