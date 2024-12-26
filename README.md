@@ -28,7 +28,8 @@ python shot.py
 ## Example
 Entering Evanilson and 2024 would yield you an image like this:
 
-![alt text](Evanilson_2024.png)
+![Evanilson_2024](https://github.com/user-attachments/assets/fbc8b5c5-19ab-490f-9abd-a2e97d4896d6)
+
 
 ## Note
 Reminder that this is still a work in progress, will be making fixes with a few issues and also try to introduce new updates as well. Works perfectly for all players for the current season, however for players who played in a different league 
