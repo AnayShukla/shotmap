@@ -2,7 +2,7 @@
 Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. EV projections also available, sourced from https://fplreview.com.
 
 ## Tutorial
-1. Download the zip file and extract its contents or run `git clone https://github.com/AnayShukla/shotmap.git` in your Terminal.
+1. Download the zip file and extract its contents or run ````git clone https://github.com/AnayShukla/shotmap.git```` in your Terminal.
 2. Set the directory to the path where you have cloned the repository (most of the times just use `cd shotmap`)
 3. Run `pip install -r requirements.txt` to install all the required packages.
 4. Run `python shot.py`.
