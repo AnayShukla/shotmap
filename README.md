@@ -3,7 +3,7 @@ Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga
 
 ## Tutorial
 1. Download the zip file and extract its contents or run `git clone https://github.com/AnayShukla/shotmap.git` in your Terminal.
-2. Set the directory to the path where you have cloned the repository (most of the times just use `cd shotmaps`)
+2. Set the directory to the path where you have cloned the repository (most of the times just use `cd shotmap`)
 3. Run `pip install -r requirements.txt` to install all the required packages.
 4. Run `python shot.py`.
 
