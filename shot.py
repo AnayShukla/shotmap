@@ -311,96 +311,115 @@ ax1.text(
 )
 
 ax1.text(
-    x=0.156,
+    x=0.096,
     y=0.286,
-    s=f'- Blocked/Off Target',
+    s=f"- Shot Saved",
     fontsize=10,
     fontproperties=font_props,
-    color='white',
+    color="white",
 )
 
 ax1.scatter(
-    x=0.14,
+    x=0.08,
+    y=0.3,
+    s=150,
+    color="yellow",
+    edgecolor="white",
+    linewidth=0.8,
+    alpha=0.7,
+)
+
+ax1.text(
+    x=0.216,
+    y=0.286,
+    s=f"- Blocked/Off Target",
+    fontsize=10,
+    fontproperties=font_props,
+    color="white",
+)
+
+ax1.scatter(
+    x=0.2,
     y=0.3,
     s=150,
     color=background_color,
-    edgecolor='white',
+    edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.336,
+    x=0.396,
     y=0.286,
-    s=f'- Goal',
+    s=f"- Goal",
     fontsize=11,
     fontproperties=font_props,
-    color='white',
+    color="white",
 )
 
 ax1.scatter(
-    x=0.32,  
+    x=0.38,
     y=0.3,
     s=150,
-    color='red',
-    edgecolor='white',
+    color="red",
+    edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.426,
+    x=0.486,
     y=0.286,
-    s=f'- Penalty Scored',
+    s=f"- Penalty Scored",
     fontsize=11,
     fontproperties=font_props,
-    color='white',
+    color="white",
 )
 
 ax1.scatter(
-    x=0.41,
+    x=0.47,
     y=0.3,
     s=150,
-    color='blue',
-    edgecolor='white',
+    color="blue",
+    edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.586,
+    x=0.646,
     y=0.286,
-    s=f'- Penalty Missed',
+    s=f"- Penalty Missed",
     fontsize=11,
     fontproperties=font_props,
-    color='white',
+    color="white",
 )
 
 ax1.scatter(
-    x=0.57, 
+    x=0.63,
     y=0.3,
     s=150,
-    color='violet',
-    edgecolor='white',
+    color="violet",
+    edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.746,  
+    x=0.806,
     y=0.286,
-    s=f'- Freekick Scored',
+    s=f"- Freekick Scored",
     fontsize=11,
     fontproperties=font_props,
-    color='white',
+    color="white",
 )
 
 ax1.scatter(
-    x=0.73,
+    x=0.79,
     y=0.3,
     s=150,
-    color='turquoise',
-    edgecolor='white',
+    color="turquoise",
+    edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
 )
@@ -526,6 +545,8 @@ for x in df.to_dict(orient="records"):
             if x["result"] != "Goal" and x["situation"] == "Penalty"
             else "turquoise"
             if x["result"] == "Goal" and x["situation"] == "Freekick"
+            else "yellow"
+            if x["result"] == "SavedShot"
             else "red"
             if x["result"] == "Goal"
             else background_color2
