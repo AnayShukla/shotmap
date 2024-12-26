@@ -311,96 +311,96 @@ ax1.text(
 )
 
 ax1.text(
-    x=0.16,
+    x=0.156,
     y=0.286,
-    s=f"Blocked/Off Target",
+    s=f'- Blocked/Off Target',
     fontsize=10,
     fontproperties=font_props,
-    color="white",
+    color='white',
 )
 
 ax1.scatter(
-    x=0.31,
+    x=0.14,
     y=0.3,
     s=150,
     color=background_color,
-    edgecolor="white",
+    edgecolor='white',
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.33,
+    x=0.336,
     y=0.286,
-    s=f"Goal",
-    fontsize=10,
+    s=f'- Goal',
+    fontsize=11,
     fontproperties=font_props,
-    color="white",
+    color='white',
 )
 
 ax1.scatter(
-    x=0.38,
+    x=0.32,  
     y=0.3,
     s=150,
-    color="red",
-    edgecolor="white",
+    color='red',
+    edgecolor='white',
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.4,
+    x=0.426,
     y=0.286,
-    s=f"Penalty Scored",
-    fontsize=10,
+    s=f'- Penalty Scored',
+    fontsize=11,
     fontproperties=font_props,
-    color="white",
+    color='white',
 )
 
 ax1.scatter(
-    x=0.52,
+    x=0.41,
     y=0.3,
     s=150,
-    color="blue",
-    edgecolor="white",
+    color='blue',
+    edgecolor='white',
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.54,
+    x=0.586,
     y=0.286,
-    s=f"Penalty Missed",
-    fontsize=10,
+    s=f'- Penalty Missed',
+    fontsize=11,
     fontproperties=font_props,
-    color="white",
+    color='white',
 )
 
 ax1.scatter(
-    x=0.66,
+    x=0.57, 
     y=0.3,
     s=150,
-    color="violet",
-    edgecolor="white",
+    color='violet',
+    edgecolor='white',
     linewidth=0.8,
     alpha=0.7,
 )
 
 ax1.text(
-    x=0.68,
+    x=0.746,  
     y=0.286,
-    s=f"Freekick Scored",
-    fontsize=10,
+    s=f'- Freekick Scored',
+    fontsize=11,
     fontproperties=font_props,
-    color="white",
+    color='white',
 )
 
 ax1.scatter(
-    x=0.81,
+    x=0.73,
     y=0.3,
     s=150,
-    color="turquoise",
-    edgecolor="white",
+    color='turquoise',
+    edgecolor='white',
     linewidth=0.8,
     alpha=0.7,
 )
