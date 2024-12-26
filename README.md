@@ -2,10 +2,10 @@
 Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from https://understat.com. EV projections also available, sourced from https://fplreview.com.
 
 ## Tutorial
-1. Download the zip file and extract its contents or run ````git clone https://github.com/AnayShukla/shotmap.git```` in your Terminal.
-2. Set the directory to the path where you have cloned the repository (most of the times just use `cd shotmap`)
-3. Run `pip install -r requirements.txt` to install all the required packages.
-4. Run `python shot.py`.
+1. Download the zip file and extract its contents or run ```git clone https://github.com/AnayShukla/shotmap.git``` in your Terminal.
+2. Set the directory to the path where you have cloned the repository (most of the times just use ```cd shotmap```)
+3. Run ```pip install -r requirements.txt``` to install all the required packages.
+4. Run ```python shot.py```.
 
 ## Generating Output
 1. Enter the name of the player whose shot map you wish to see. You can also enter discrete names such as **salah** to get it for **Mohammed Salah**, but avoid doing so for players with common names or vague spellings (basically specificity is preferred :) )
