@@ -381,6 +381,7 @@ ax1.scatter(
     y=0.3,
     s=150,
     color="blue",
+    marker='s',
     edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
@@ -400,6 +401,7 @@ ax1.scatter(
     y=0.3,
     s=150,
     color="violet",
+    marker='s',
     edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
@@ -419,6 +421,7 @@ ax1.scatter(
     y=0.3,
     s=150,
     color="turquoise",
+    marker = '^',
     edgecolor="white",
     linewidth=0.8,
     alpha=0.7,
@@ -550,6 +553,13 @@ for x in df.to_dict(orient="records"):
             else "red"
             if x["result"] == "Goal"
             else background_color2
+        ),
+        marker=(
+            "s"
+            if x["situation"] == "Penalty"
+            else "^"
+            if x["situation"] == "Freekick"
+            else "o"
         ),
         ax=ax2,
         alpha=0.6,
