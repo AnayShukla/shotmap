@@ -631,27 +631,32 @@ ax3.text(
     ha="left",
 )
 
-ax3.text(
-    x=0.84,
-    y=2.7,
-    s=f"  Projections \n  this GW:",
-    fontsize=18,
-    fontproperties=font_props,
-    fontweight="bold",
-    color="white",
-    ha="left",
-)
-
-ax3.text(
-    x=0.85,
-    y=1.2,
-    s=f" xMins: {player_xmins} \n Price: {final_price} \n EV: {player_ev}",
-    fontsize=18,
-    fontproperties=font_props,
-    fontweight="bold",
-    color="white",
-    ha="left",
-)
+if league == "EPL" and season == "2024":
+    if review_data.lower() == "y":
+        ax3.text(
+            x=0.84,
+            y=2.7,
+            s=f"  Projections \n  this GW:",
+            fontsize=18,
+            fontproperties=font_props,
+            fontweight="bold",
+            color="white",
+            ha="left",
+        )
+        ax3.text(
+            x=0.85,
+            y=1.2,
+            s=f" xMins: {player_xmins} \n Price: {final_price} \n EV: {player_ev}",
+            fontsize=18,
+            fontproperties=font_props,
+            fontweight="bold",
+            color="white",
+            ha="left",
+        )
+    else:
+        pass
+else:
+    pass
 
 ax3.text(
     x=0.21,
