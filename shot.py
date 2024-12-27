@@ -143,7 +143,7 @@ if league == "EPL" and season == "2024":
             similarities = util.cos_sim(input_embedding, df5_embeddings)
             best_match_index = similarities.argmax().item()
             best_match = df5[best_match_index]
-            if similarities.max() < 0.7:
+            if similarities.max() < 0.5:
                 for name in df5:
                     input_parts = closest.split()
                     name_parts = name.split()
