@@ -120,7 +120,7 @@ if league == "EPL" and season == "2024":
 
         playlist = []
 
-        for row_num in range(1, num_rows):
+        for row_num in range(1, num_rows-1):
             xpath = f'//*[@id="lightweight"]/tr[{row_num}]'
             name = driver.find_element(
                 By.XPATH, f'{xpath}/td[2]//div[@class="playerName"]'
