@@ -46,7 +46,7 @@ with tab1:
             placeholder="e.g. Mohamed Salah",
         )
         season = st.text_input(
-            "Enter year", placeholder="e.g. 2022 for the 2022/23 season"
+            "Enter year", placeholder="e.g. enter 2022 if you wish to see results for the 2022/23 season"
         )
 
         review_data = st.toggle(
