@@ -35,7 +35,7 @@ st.markdown(
 tab1, tab2, tab3 = st.tabs(["Main", "Output", "FAQ"])
 
 with tab1:
-    with st.container(height=600, border=True):
+    with st.container(height=500, border=True):
         st.header("About")
         st.write(
             "Generates a shot map visualization of a player currently playing in the top 5 European leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL. Data sourced from [Understat](https://understat.com). FPL EV projections also available, sourced from [fplreview](https://fplreview.com). Also available as a GitHub Repo titled [shotmap](https://github.com/AnayShukla/shotmap) to run locally. "
