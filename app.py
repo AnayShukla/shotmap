@@ -273,8 +273,6 @@ with tab1:
                     background_color = "#484e48"
                     background_color2 = "#2c932f"
 
-                    font_path = "...\lato\Lato-Regular.ttf"
-                    font_props = fm.FontProperties(fname=font_path)
 
                     fig = plt.figure(figsize=(9, 13))
                     fig.patch.set_facecolor(background_color)
@@ -293,7 +291,7 @@ with tab1:
                         y=0.85,
                         s=player_name,
                         fontsize=25,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="center",
@@ -304,7 +302,7 @@ with tab1:
                         y=0.71,
                         s=f"Shot Map for the {league_name} {season}/{int(season[2:4]) + 1} Season",
                         fontsize=13,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="center",
@@ -315,7 +313,7 @@ with tab1:
                         y=0.5,
                         s="Low Quality Chance",
                         fontsize=12,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="center",
@@ -371,7 +369,7 @@ with tab1:
                         y=0.5,
                         s="High Quality Chance",
                         fontsize=12,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="center",
@@ -382,7 +380,7 @@ with tab1:
                         y=0.286,
                         s=f"- Shot Saved",
                         fontsize=10,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -401,7 +399,7 @@ with tab1:
                         y=0.286,
                         s=f"- Blocked/Off Target",
                         fontsize=10,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -420,7 +418,7 @@ with tab1:
                         y=0.286,
                         s=f"- Goal",
                         fontsize=11,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -439,7 +437,7 @@ with tab1:
                         y=0.286,
                         s=f"- Penalty Scored",
                         fontsize=11,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -459,7 +457,7 @@ with tab1:
                         y=0.286,
                         s=f"- Penalty Missed",
                         fontsize=11,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -479,7 +477,7 @@ with tab1:
                         y=0.286,
                         s=f"- Freekick Scored",
                         fontsize=11,
-                        fontproperties=font_props,
+                        
                         color="white",
                     )
 
@@ -499,7 +497,7 @@ with tab1:
                         y=-0.1,
                         s=f"xG per 90",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -510,7 +508,7 @@ with tab1:
                         y=-0.23,
                         s=f"{xg_p90:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -521,7 +519,7 @@ with tab1:
                         y=-0.51,
                         s=f"Shots per 90",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -532,7 +530,7 @@ with tab1:
                         y=-0.63,
                         s=f"{shots_p90:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -543,7 +541,7 @@ with tab1:
                         y=-0.9,
                         s=f"npxG per 90",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -554,7 +552,7 @@ with tab1:
                         y=-1.03,
                         s=f"{npxg_p90:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -565,7 +563,7 @@ with tab1:
                         y=-1.3,
                         s=f"xGI per 90",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -576,7 +574,7 @@ with tab1:
                         y=-1.43,
                         s=f"{xgi_p90:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -646,7 +644,7 @@ with tab1:
                         y=1.8,
                         s=f"Total Shots",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -657,7 +655,7 @@ with tab1:
                         y=1.4,
                         s=f"{number_of_shots}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -668,7 +666,7 @@ with tab1:
                         y=1.8,
                         s=f"Total Goals",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -679,7 +677,7 @@ with tab1:
                         y=1.4,
                         s=f"{number_of_goals}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -690,7 +688,7 @@ with tab1:
                         y=1.8,
                         s=f"Total xG",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -701,7 +699,7 @@ with tab1:
                         y=1.4,
                         s=f"{number_of_xg:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -712,7 +710,7 @@ with tab1:
                         y=1.8,
                         s=f"xG per Shot",
                         fontsize=20,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -723,7 +721,7 @@ with tab1:
                         y=1.4,
                         s=f"{xg_per_shot:.2f}",
                         fontsize=18,
-                        fontproperties=font_props,
+                        
                         fontweight="bold",
                         color="white",
                         ha="left",
@@ -736,7 +734,7 @@ with tab1:
                                 y=2.7,
                                 s=f"  Projections \n  this GW:",
                                 fontsize=18,
-                                fontproperties=font_props,
+                                
                                 fontweight="bold",
                                 color="white",
                                 ha="left",
@@ -746,7 +744,7 @@ with tab1:
                                 y=1.2,
                                 s=f" xMins: {player_xmins} \n Price: {final_price} \n EV: {player_ev}",
                                 fontsize=18,
-                                fontproperties=font_props,
+                                
                                 fontweight="bold",
                                 color="white",
                                 ha="left",
