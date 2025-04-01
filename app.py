@@ -732,7 +732,7 @@ with tab1:
                     )
                     
                     if league == "EPL" and season == "2024":
-                        if review_data.lower() == "y":
+                        if review_data:
                             ax3.text(
                                 x=0.84,
                                 y=2.7,
