@@ -273,7 +273,7 @@ with tab1:
                     background_color = "#484e48"
                     background_color2 = "#2c932f"
 
-                    font_path = "...\lato\Lato-Regular.ttf"
+                    font_path = "\lato\Lato-Regular.ttf"
                     font_props = fm.FontProperties(fname=font_path)
 
 
