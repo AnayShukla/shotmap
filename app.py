@@ -273,6 +273,9 @@ with tab1:
                     background_color = "#484e48"
                     background_color2 = "#2c932f"
 
+                    font_path = "...\lato\Lato-Regular.ttf"
+                    font_props = fm.FontProperties(fname=font_path)
+
 
                     fig = plt.figure(figsize=(9, 13))
                     fig.patch.set_facecolor(background_color)
@@ -286,39 +289,39 @@ with tab1:
                     ax1.set_xlim(0, 1)
                     ax1.set_ylim(0, 1)
 
-                    ax1.text(
+                   ax1.text(
                         x=0.5,
                         y=0.85,
                         s=player_name,
                         fontsize=25,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="center",
                     )
-
+                    
                     ax1.text(
                         x=0.5,
                         y=0.71,
                         s=f"Shot Map for the {league_name} {season}/{int(season[2:4]) + 1} Season",
                         fontsize=13,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="center",
                     )
-
+                    
                     ax1.text(
                         x=0.27,
                         y=0.5,
                         s="Low Quality Chance",
                         fontsize=12,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="center",
                     )
-
+                    
                     ax1.scatter(
                         x=0.37,
                         y=0.53,
@@ -327,7 +330,7 @@ with tab1:
                         edgecolor="white",
                         linewidth=0.8,
                     )
-
+                    
                     ax1.scatter(
                         x=0.42,
                         y=0.53,
@@ -336,7 +339,7 @@ with tab1:
                         edgecolor="white",
                         linewidth=0.8,
                     )
-
+                    
                     ax1.scatter(
                         x=0.48,
                         y=0.53,
@@ -345,7 +348,7 @@ with tab1:
                         edgecolor="white",
                         linewidth=0.8,
                     )
-
+                    
                     ax1.scatter(
                         x=0.54,
                         y=0.53,
@@ -354,7 +357,7 @@ with tab1:
                         edgecolor="white",
                         linewidth=0.8,
                     )
-
+                    
                     ax1.scatter(
                         x=0.61,
                         y=0.53,
@@ -363,27 +366,27 @@ with tab1:
                         edgecolor="white",
                         linewidth=0.8,
                     )
-
+                    
                     ax1.text(
                         x=0.723,
                         y=0.5,
                         s="High Quality Chance",
                         fontsize=12,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="center",
                     )
-
+                    
                     ax1.text(
                         x=0.096,
                         y=0.286,
                         s=f"- Shot Saved",
                         fontsize=10,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.08,
                         y=0.3,
@@ -393,16 +396,16 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.216,
                         y=0.286,
                         s=f"- Blocked/Off Target",
                         fontsize=10,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.2,
                         y=0.3,
@@ -412,16 +415,16 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.396,
                         y=0.286,
                         s=f"- Goal",
                         fontsize=11,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.38,
                         y=0.3,
@@ -431,16 +434,16 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.486,
                         y=0.286,
                         s=f"- Penalty Scored",
                         fontsize=11,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.47,
                         y=0.3,
@@ -451,16 +454,16 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.646,
                         y=0.286,
                         s=f"- Penalty Missed",
                         fontsize=11,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.63,
                         y=0.3,
@@ -471,16 +474,16 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.806,
                         y=0.286,
                         s=f"- Freekick Scored",
                         fontsize=11,
-                        
+                        fontproperties=font_props,
                         color="white",
                     )
-
+                    
                     ax1.scatter(
                         x=0.79,
                         y=0.3,
@@ -491,102 +494,103 @@ with tab1:
                         linewidth=0.8,
                         alpha=0.7,
                     )
-
+                    
                     ax1.text(
                         x=0.83,
                         y=-0.1,
                         s=f"xG per 90",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.88,
                         y=-0.23,
                         s=f"{xg_p90:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.82,
                         y=-0.51,
                         s=f"Shots per 90",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.88,
                         y=-0.63,
                         s=f"{shots_p90:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.82,
                         y=-0.9,
                         s=f"npxG per 90",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.88,
                         y=-1.03,
                         s=f"{npxg_p90:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.83,
                         y=-1.3,
                         s=f"xGI per 90",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax1.text(
                         x=0.88,
                         y=-1.43,
                         s=f"{xgi_p90:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
+                    
                     ax2 = fig.add_axes([0.05, 0.3, 0.72, 0.45])
                     for spine in ax2.spines.values():
                         spine.set_visible(False)
                     ax2.set_xticks([])
                     ax2.set_yticks([])
                     ax2.set_facecolor(background_color2)
-
+                    
                     pitch = VerticalPitch(
                         pitch_type="opta",
                         half=True,
@@ -597,9 +601,9 @@ with tab1:
                         axis=True,
                         label=True,
                     )
-
+                    
                     pitch.draw(ax=ax2)
-
+                    
                     for x in df.to_dict(orient="records"):
                         pitch.scatter(
                             x["X"],
@@ -611,8 +615,7 @@ with tab1:
                                 else "violet"
                                 if x["result"] != "Goal" and x["situation"] == "Penalty"
                                 else "turquoise"
-                                if x["result"] == "Goal"
-                                and x["situation"] == "Freekick"
+                                if x["result"] == "Goal" and x["situation"] == "Freekick"
                                 else "yellow"
                                 if x["result"] == "SavedShot"
                                 else "red"
@@ -631,110 +634,110 @@ with tab1:
                             linewidth=0.8,
                             edgecolor="white",
                         )
-
+                    
                     ax3 = fig.add_axes([0, 0.2, 1, 0.05])
                     for spine in ax3.spines.values():
                         spine.set_visible(False)
                     ax3.set_xticks([])
                     ax3.set_yticks([])
                     ax3.set_facecolor(background_color)
-
+                    
                     ax3.text(
                         x=0.06,
                         y=1.8,
                         s=f"Total Shots",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.12,
                         y=1.4,
                         s=f"{number_of_shots}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.25,
                         y=1.8,
                         s=f"Total Goals",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.32,
                         y=1.4,
                         s=f"{number_of_goals}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.44,
                         y=1.8,
                         s=f"Total xG",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.48,
                         y=1.4,
                         s=f"{number_of_xg:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.6,
                         y=1.8,
                         s=f"xG per Shot",
                         fontsize=20,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     ax3.text(
                         x=0.66,
                         y=1.4,
                         s=f"{xg_per_shot:.2f}",
                         fontsize=18,
-                        
+                        fontproperties=font_props,
                         fontweight="bold",
                         color="white",
                         ha="left",
                     )
-
+                    
                     if league == "EPL" and season == "2024":
-                        if review_data:
+                        if review_data.lower() == "y":
                             ax3.text(
                                 x=0.84,
                                 y=2.7,
                                 s=f"  Projections \n  this GW:",
                                 fontsize=18,
-                                
+                                fontproperties=font_props,
                                 fontweight="bold",
                                 color="white",
                                 ha="left",
@@ -744,7 +747,7 @@ with tab1:
                                 y=1.2,
                                 s=f" xMins: {player_xmins} \n Price: {final_price} \n EV: {player_ev}",
                                 fontsize=18,
-                                
+                                fontproperties=font_props,
                                 fontweight="bold",
                                 color="white",
                                 ha="left",
