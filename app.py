@@ -93,7 +93,7 @@ with tab1:
                     df4 = players_data["name"].dropna().astype(str).tolist()
                     df4 = [name.lower() for name in df4]
 
-                    model = SentenceTransformer("all-MiniLM-L6-v2")
+                    model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
                     def matching(input1, df4):
                         input_embedding = model.encode(input1)
