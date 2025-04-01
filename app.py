@@ -288,8 +288,9 @@ with tab1:
                     ax1.set_facecolor(background_color)
                     ax1.set_xlim(0, 1)
                     ax1.set_ylim(0, 1)
-
-                   ax1.text(
+                    
+                    
+                    ax1.text(
                         x=0.5,
                         y=0.85,
                         s=player_name,
