@@ -38,7 +38,7 @@ with tab1:
     with st.container(height=500, border=True):
         st.header("About")
         st.write(
-            "Generates a shot map visualization of a player currently playing in the top 5 European leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL. Data sourced from [Understat](https://understat.com). FPL EV projections also available, sourced from [fplreview](https://fplreview.com). Also available as a GitHub Repo titled [shotmap](https://github.com/AnayShukla/shotmap) to run locally. "
+            "Generates a shot map visualization of a player currently playing in the top 5 European leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL. Data sourced from [Understat](https://understat.com). FPL EV projections also available, sourced from [fplreview](https://fplreview.com)."
         )
 
         input1 = st.text_input(
@@ -884,18 +884,6 @@ with tab3:
 
     if st.button("What does the size of the shape indicate?"):
         st.write_stream(q7)
-
-    st.markdown("---")
-
-    st.subheader("Github Repo")
-    
-    st.markdown(
-            "If you wish to clone it, run the following command in your terminal:"
-        )
-    st.code(
-            """git clone https://github.com/AnayShukla/shotmap.git """, language="bash"
-        )
-
     
     st.markdown("---")
     st.markdown("""
