@@ -844,10 +844,10 @@ with tab3:
     with st.expander("What is npxG?"):
         st.write_stream(what_is_npxg)
 
-     with st.expander("What is xGI?"):
+    with st.expander("What is xGI?"):
         st.write_stream(what_is_xgi)
 
-    with st.expander("Why are all the metrics in 'per 90'?):
+    with st.expander("Why are all the metrics in 'per 90'?"):
         st.write_stream(what_is_per90)
 
     with st.expander("What does the size of the shape indicate?"):
