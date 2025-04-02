@@ -830,65 +830,28 @@ with tab3:
     what_is_per90 = """Per 90 refers to statistics that are normalized to a 90-minute match duration. It allows for fair comparisons between players or teams regardless of the number of minutes played. However, it is important to note that sometimes per 90 stats can be misleading if a player has played significantly fewer minutes than others, as they may not accurately reflect their overall performance."""
     what_are_the_circles = """The circles on the shot map represent the quality of the scoring chance. The size of the circle indicates the xG value of the shot, with larger circles representing higher xG values. The color of the circle indicates the result of the shot, such as a goal (red), saved shot (yellow), blocked/off target (colourless), penalty scored (blue square), penalty missed (pink square), and freekick scored (turquoise triangle)."""
 
-    def q1():
-        for word in what_is_a_shot_map.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q2():
-        for word in how_is_it_useful.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q3():
-        for word in what_is_xg.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q4():
-        for word in what_is_npxg.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q5():
-        for word in what_is_xgi.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q6():
-        for word in what_is_per90.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
-    def q7():
-        for word in what_are_the_circles.split(" "):
-            yield word + " "
-            time.sleep(0.04)
-
+    
     st.markdown("### Frequently Asked Questions (FAQ)")
     with st.expander("What is a shot map?"):
-        st.write_stream(q1)
-    
-    if st.button("What is a shot map?"):
-        st.write_stream(q1)
+        st.write_stream(what_is_a_shot_map)
 
-    if st.button("How can I use it?"):
-        st.write_stream(q2)
+    with st.expander("How can I use it?"):
+        st.write_stream(how_is_it_useful)
 
-    if st.button("What is xG?"):
-        st.write_stream(q3)
+    with st.expander("What is xG?"):
+        st.write_stream(what_is_xg)
 
-    if st.button("What is npxG?"):
-        st.write_stream(q4)
+    with st.expander("What is npxG?"):
+        st.write_stream(what_is_npxg)
 
-    if st.button("What is xGI?"):
-        st.write_stream(q5)
+     with st.expander("What is xGI?"):
+        st.write_stream(what_is_xgi)
 
-    if st.button("Why are all the metrics in 'per 90'?"):
-        st.write_stream(q6)
+    with st.expander("Why are all the metrics in 'per 90'?):
+        st.write_stream(what_is_per90)
 
-    if st.button("What does the size of the shape indicate?"):
-        st.write_stream(q7)
+    with st.expander("What does the size of the shape indicate?"):
+        st.write_stream(what_are_the_circles)
     
     st.markdown("---")
     st.markdown("""
