@@ -790,8 +790,8 @@ with tab1:
         )
 
 
-if button:
-    st.session_state.generate_plot = True
+    if button:
+        st.session_state.generate_plot = True
 
 with tab2:
     st.header("Output")
