@@ -833,25 +833,25 @@ with tab3:
     
     st.markdown("### Frequently Asked Questions (FAQ)")
     with st.expander("What is a shot map?"):
-        st.write_stream(what_is_a_shot_map)
+        st.write(what_is_a_shot_map)
 
     with st.expander("How can I use it?"):
-        st.write_stream(how_is_it_useful)
+        st.write(how_is_it_useful)
 
     with st.expander("What is xG?"):
-        st.write_stream(what_is_xg)
+        st.write(what_is_xg)
 
     with st.expander("What is npxG?"):
-        st.write_stream(what_is_npxg)
+        st.write(what_is_npxg)
 
     with st.expander("What is xGI?"):
-        st.write_stream(what_is_xgi)
+        st.write(what_is_xgi)
 
     with st.expander("Why are all the metrics in 'per 90'?"):
-        st.write_stream(what_is_per90)
+        st.write(what_is_per90)
 
     with st.expander("What does the size of the shape indicate?"):
-        st.write_stream(what_are_the_circles)
+        st.write(what_are_the_circles)
     
     st.markdown("---")
     st.markdown("""
