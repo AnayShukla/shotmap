@@ -867,7 +867,7 @@ with tab3:
 
     st.markdown("### Frequently Asked Questions (FAQ)")
     with st.expander("What is a shot map?"):
-        st.write(what_is_a_shot_map)
+        st.write_stream(q1)
     
     if st.button("What is a shot map?"):
         st.write_stream(q1)
