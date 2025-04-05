@@ -94,7 +94,7 @@ with tab1:
                 st.error("Please enter a valid year.", icon=":material/error:")
             else:
                 with st.spinner(
-                    "Generating shot map, this will take a few minutes...",
+                    "Generating shot map, this will take a few minutes (feel free to browse through the FAQ section!)...",
                     show_time=True,
                 ):
                     try:
@@ -836,7 +836,7 @@ with tab1:
 with tab2:
     st.header("Output")
     st.markdown(
-        "Any doubts regarding the output generated? Or feel unengaged while waiting? Head over to the FAQ tab to learn more about the project."
+        "Any doubts regarding the output generated? Or bored while waiting? Head over to the FAQ tab to learn more about the project."
     )
 
     st.subheader("Your Shot Map will be generated here:")
