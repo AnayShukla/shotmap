@@ -8,4 +8,5 @@ selenium
 sentence_transformers
 jellyfish
 webdriver-manager
+accelerate
 chromedriver-autoinstaller
