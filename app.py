@@ -22,9 +22,7 @@ import streamlit as st
 st.set_page_config(page_title="Shotmapgenerator", page_icon=":soccer:")
 
 st.header("About")
-        st.write(
-            "Generates a shot map visualization of a player currently playing in the top 5 European leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL. Data sourced from [Understat](https://understat.com). FPL EV projections also available, sourced from [fplreview](https://fplreview.com)."
-        )
+st.write("Generates a shot map visualization of a player currently playing in the top 5 European leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL. Data sourced from [Understat](https://understat.com). FPL EV projections also available, sourced from [fplreview](https://fplreview.com).")
 
 torch.classes.__path__ = []
 
