@@ -47,7 +47,7 @@ st.write("Generates a shot map visualization of a player currently playing in th
 tab1, tab2, tab3 = st.tabs(["Main", "Output", "FAQ"])
 
 with tab1:
-    with st.container(height=500, border=True):
+    with st.container(height=300, border=True):
         
 
         input1 = st.text_input(
