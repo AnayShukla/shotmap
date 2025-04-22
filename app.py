@@ -19,7 +19,7 @@ import torch
 from io import BytesIO
 import streamlit as st
 
-st.set_page_config(page_title="Shotmapgenerator", page_icon=":soccer:")
+st.set_page_config(page_title="Shotmapgen", page_icon=":soccer:")
 
 torch.classes.__path__ = []
 
