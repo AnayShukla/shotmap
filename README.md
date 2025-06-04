@@ -1,5 +1,6 @@
 ## Shotmap
-GitHub Repository for the Website: [shotmapgen](https://shotmap.streamlit.app)
+GitHub Repository for the Website: [shotmapgen](https://shotmap.streamlit.app) 
+
 Generates a shot map visualization of a player in the top 5 leagues (PL, La Liga, Serie A, Bundesliga, Ligue 1) and RFPL, all this data sourced from [Understat](https://understat.com). EV projections also available, sourced from [fplreview](https://fplreview.com).
 
 ## Tutorial
