@@ -26,9 +26,9 @@ python shot.py
 4. Check `shotmap/results` to find the exported image.
 
 ## Example
-Entering Evanilson and 2024 would yield you an image like this:
+Entering Mohamed Salah and 2024 would yield you an image like this:
 
-![Evanilson_2024](https://github.com/user-attachments/assets/fbc8b5c5-19ab-490f-9abd-a2e97d4896d6)
+![Salah_2024](https://github.com/user-attachments/assets/104fd335-a4a7-426b-8919-5c410fa076ed)
 
 
 ## Note
